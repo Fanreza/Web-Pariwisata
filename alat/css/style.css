@@ -24,9 +24,16 @@ body{
 .carousel-inner img{
 	height: 660px;
 }
+
+.carousel-inner h5{
+	font-size: 30px;
+	font-weight: bold;
+}
 	
 .head h1{
 	text-align: center;
+	padding-bottom: 20px;
+	font-weight: bold;
 }
 
 .bg-transparant {
@@ -63,3 +70,88 @@ body{
 	font-weight: bold;
 	padding: 10px;
 }
+
+.text-center{
+	padding-top: 20px;
+	width: 400px;
+	margin: auto;
+	background-color: rgba(255,255,255,.3);
+	box-shadow: 0 0 4px 3px grey;
+	border-radius: 3%;
+}
+
+.text-center img{
+	width: 100px;
+}
+
+.text-center p{
+	font-weight: bold;
+	font-size: 17px;
+}
+
+
+.container-fluid .carousel-inner img{
+	height: 300px;
+	border: 1px solid black;
+}
+
+.container-fluid .carousel-inner{
+	padding-top: 80px;
+}
+
+.container-fluid .carousel-inner h4{
+	font-weight: bold;
+}
+
+.row .card{
+	box-shadow: 0 0 4px 3px grey;
+	margin: auto;
+}
+
+.container-fluid .carousel-control-prev-icon,
+.container-fluid .carousel-control-next-icon {
+  height: 80px;
+  width: 80px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.container-fluid .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #403f3d;
+}
+
+.container-fluid .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #403f3d;
+}
+
+.footer{
+	background: #dcdedd;
+    min-height: 300px;
+    padding-top: 40px;
+    margin-top: 100px;
+}
+
+.footer img{
+	width: 100px;
+}
+
+.title-footer{
+	font-weight: 900;
+}
+
+.col-md-4 p{
+	font-size: 16px;
+}
+
+
+.list-contact>li>a{
+	font-weight: 900;
+    color: #333;
+    font-size: 16px;
+}
+
