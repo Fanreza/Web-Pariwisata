@@ -1,0 +1,65 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	background: url(../img/bg.png);
+}
+
+.navbar-nav .nav-item a:hover{
+	color: #c04245;
+}
+
+.navbar-nav a{
+	color: black;
+	font-weight: bold;
+	transition: all .2s ease .1s;
+	font-size: 17px;
+}
+
+.carousel-inner img{
+	height: 660px;
+}
+	
+.head h1{
+	text-align: center;
+}
+
+.bg-transparant {
+    background: transparent !important;
+    transition :0.50s ease;
+}
+.bg-transparant.scroll{
+    background: white !important;
+}
+
+.bg-transparant.scroll a:hover{
+	background-color: #d6d4d4 !important;
+}
+
+.dropdown-menu{
+	transition: all 1s ease 1s;
+}
+
+.menu-area{
+    position: static;
+    transition: 1s ease;
+}
+.mega-area{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    transition: 1s ease;
+}
+
+.mega-area h2{
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+}
