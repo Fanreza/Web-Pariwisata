@@ -6,6 +6,10 @@
 	list-style: none;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background: url(../img/bg.png);
 }
@@ -19,6 +23,41 @@ body{
 	font-weight: bold;
 	transition: all .2s ease .1s;
 	font-size: 17px;
+}
+
+.navbar-toggler span img{
+	width: 20px;
+	height: 20px;
+}
+
+.select-box{
+	width: 300px;
+	position: relative;
+}
+
+.select-box select{
+	height: 42px;
+	padding: 10px 15px;
+	line-height: 20px;
+	font-size: 16px;
+	width: 100%;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: .10s all ease;
+
+}
+
+.select-box:after{
+	content: "\25bc";
+	position: absolute;
+	right: 10px;
+	top: 25%;
+	margin-top: -5px;
+	cursor: pointer;
+	pointer-events: none;
 }
 
 .carousel-inner img{
@@ -46,29 +85,6 @@ body{
 
 .bg-transparant.scroll a:hover{
 	background-color: #d6d4d4 !important;
-}
-
-.dropdown-menu{
-	transition: all 1s ease 1s;
-}
-
-.menu-area{
-    position: static;
-    transition: 1s ease;
-}
-.mega-area{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    transition: 1s ease;
-}
-
-.mega-area h2{
-	text-align: center;
-	font-weight: bold;
-	padding: 10px;
 }
 
 .text-center{
@@ -165,6 +181,7 @@ body{
 .copyright{
 	background-color: #a6a6a6;
 	height: 30px;
+	color: #121212;
 }
 
 .copyright h1{
@@ -174,3 +191,14 @@ body{
 	padding: 0;
 	font-weight: bold;
 }
+
+.copyright a{
+	font-weight: 700;
+	text-decoration: none;
+	color: #121212;
+}
+
+.copyright a:hover{
+	color: #000;
+}
+
