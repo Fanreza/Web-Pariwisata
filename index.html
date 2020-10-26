@@ -17,7 +17,7 @@
       <img src="alat/img/icon.png" width="30" height="30" alt="" loading="lazy">
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class=""><img src="icon.png"></span>
+    <span class=""><img src="alat/img/menu.png"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
@@ -30,40 +30,23 @@
       <li class="nav-item active">
         <a class="nav-link" href="#about">About</a>
       </li>
-      <li class="nav-item dropdown menu-area">
-        <a class="nav-link dropdown-toggle" href="#" id="mega-two" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Provinsi
-        </a>
-        <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
-          <h2>Wisata Di Provinsi Indonesia</h2>
-          <div class="row">
-            <div class="col-sm-6 col-lg-3">
-              <a href="#" class="dropdown-item">Nanggroe Aceh Darussalam</a>
-              <a href="#" class="dropdown-item">Sumatera Utara</a>
-              <a href="#" class="dropdown-item">Sumatera Barat</a>
-              <a href="#" class="dropdown-item">Riau</a>  
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <a href="#" class="dropdown-item">Kepulauan Riau</a>
-              <a href="#" class="dropdown-item">Jambi</a>
-              <a href="#" class="dropdown-item">Bengkulu</a>
-              <a href="#" class="dropdown-item">Sumatera Selatan</a>  
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <a href="#" class="dropdown-item">Lampung</a>
-              <a href="#" class="dropdown-item">Kepulauan Bangka Belitung</a>
-              <a href="#" class="dropdown-item">Banten</a>
-              <a href="#" class="dropdown-item">Jawa Barat</a>  
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <a href="#" class="dropdown-item">DKI Jakarta</a>
-              <a href="#" class="dropdown-item">Jawa Tengah</a>
-              <a href="#" class="dropdown-item">Jawa Timur</a>
-              <a href="#" class="dropdown-item">Bali</a>  
-            </div>
-          </div>
-        </div>
-      </li>
+      <div class="select-box">
+        <select data-selected="default" name="role" onchange=" location = this.value;">
+          <option value="default" disabled hidden class="default">Pilih Provinsi</option>
+          <option value="#about">Jawa Barat</option>
+          <option value="#">Papua Barat</option>
+          <option value="#">DKI Jakarta</option>
+          <option value="#">Jawa Timur</option>
+          <option value="#">Jawa Tengah</option>
+          <option value="#">Bali</option>
+          <option value="#">KEPULAUAN RIAU</option>
+          <option value="#">SULAWESI UTARA</option>
+          <option value="#">D.I YOGYAKARTA</option>
+          <option value="#">SUMATERA UTARA</option>
+          <option value="#">BANTEN</option>
+          <option value="#">NUSA TENGGARA BARAT</option>
+        </select>
+      </div>
     </ul>
   </div>
 </nav>
@@ -240,12 +223,13 @@
 </div>
 
 <div class="copyright">
-  <h1>Copyright 2020 &copy; Nev Travel</h1>
+  <h1>Copyright 2020 &copy; <a href="nevtik.org">Nev Travel</a></h1>
 </div>
 
     <script src="alat/js/jquery-3.4.1.slim.min.js"></script>
     <script src="alat/js/popper.min.js"></script>
     <script src="alat/bootstrap/js/bootstrap.min.js"></script>
+    <script src="alat/js/script.js"></script>
     <script type="text/javascript">
 
 
@@ -253,6 +237,17 @@
        $('nav').toggleClass('scroll', $(this).scrollTop() > 10);
        });
        
+
+       // $("select").click(function() {
+       //  var open = $(this).data("buka");
+       //  if(open) {
+       //    window.location.href = $(this).val()
+       //  }
+       // $(this).data("buka", !open);
+       // });
+        document.querySelectorAll('[data-selected]').forEach(e => {
+         e.value = e.dataset.selected
+      });
     </script>
   </body>
 </html>
