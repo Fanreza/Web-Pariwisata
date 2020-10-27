@@ -78,15 +78,20 @@ body{
 	font-weight: 900;
 }
 
-.col-md-4 p{
-	font-size: 16px;
+.icon-sosmed img{
+	width: 50px;
+	margin: 10px;
+	margin-top: 40px;
 }
 
-
-.list-contact>li>a{
+.col-md-4 p{
+	font-size: 16px;
 	font-weight: 900;
-    color: #333;
-    font-size: 16px;
+}
+
+.footer-text{
+	font-size: 20px;
+	font-weight: 500;
 }
 
 .copyright{
@@ -198,10 +203,21 @@ body{
 	width: 75%;
 }
 
-.card-deck img{
+.card-deck .card img{
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
+	margin: auto;
+}
+
+.card-footer{
+	text-align: center;
+}
+
+.card-deck .card-footer img{
+	margin: 15px;
+	width: 50px;
+	height: 50px;
 }
 
 
