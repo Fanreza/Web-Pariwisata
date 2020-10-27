@@ -1,3 +1,4 @@
+/*CSS Global*/
 *{
 	padding: 0;
 	margin: 0;
@@ -11,7 +12,7 @@ html{
 }
 
 body{
-	background: url(../img/bg.png);
+	background-image: linear-gradient(#6bd3ff,#78d7ff);
 }
 
 .navbar-nav .nav-item a:hover{
@@ -33,6 +34,7 @@ body{
 .select-box{
 	width: 300px;
 	position: relative;
+	margin-left: 30px;
 }
 
 .select-box select{
@@ -60,99 +62,8 @@ body{
 	pointer-events: none;
 }
 
-.carousel-inner img{
-	height: 660px;
-}
-
-.carousel-inner h5{
-	font-size: 30px;
-	font-weight: bold;
-}
-	
-.head h1{
-	text-align: center;
-	padding-bottom: 20px;
-	font-weight: bold;
-}
-
-.bg-transparant {
-    background: transparent !important;
-    transition :0.50s ease;
-}
-.bg-transparant.scroll{
-    background: white !important;
-}
-
-.bg-transparant.scroll a:hover{
-	background-color: #d6d4d4 !important;
-}
-
-.text-center{
-	padding-top: 20px;
-	width: 400px;
-	margin: auto;
-	background-color: rgba(255,255,255,.3);
-	box-shadow: 0 0 4px 3px grey;
-	border-radius: 3%;
-}
-
-.text-center img{
-	width: 100px;
-}
-
-.text-center p{
-	font-weight: bold;
-	font-size: 17px;
-}
-
-
-.container-fluid .carousel-inner img{
-	height: 300px;
-	border: 1px solid black;
-}
-
-.container-fluid .carousel-inner{
-	padding-top: 20px;
-}
-
-.container-fluid .carousel-inner h4{
-	font-weight: bold;
-}
-
-.container-fluid h1{
-	text-align: center;
-	font-weight: 900;
-	padding-top: 40px;
-}
-
-.row .card{
-	box-shadow: 0 0 4px 3px grey;
-	margin: auto;
-}
-
-.container-fluid .carousel-control-prev-icon,
-.container-fluid .carousel-control-next-icon {
-  height: 80px;
-  width: 80px;
-  background-size: 100%, 100%;
-  background-image: none;
-}
-
-.container-fluid .carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: #403f3d;
-}
-
-.container-fluid .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: #403f3d;
-}
-
 .footer{
-	background: #dcdedd;
+	background-image: linear-gradient(#07c5f5,#6bd3ff);
 	min-height: 200px;
     padding-top: 40px;
     margin-top: 100px;
@@ -179,7 +90,7 @@ body{
 }
 
 .copyright{
-	background-color: #a6a6a6;
+	background-color: #7fd6e3;
 	height: 30px;
 	color: #121212;
 }
@@ -202,3 +113,132 @@ body{
 	color: #000;
 }
 
+
+
+/*CSS File Index*/
+.carousel-inner img{
+	height: 660px;
+}
+
+.carousel-inner h5{
+	font-size: 30px;
+	font-weight: bold;
+}
+	
+#head h1{
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+.bg-transparant {
+    background: transparent !important;
+    transition :0.50s ease;
+}
+.bg-transparant.scroll{
+    background: white !important;
+}
+
+.bg-transparant.scroll a:hover{
+	background-color: #d6d4d4 !important;
+}
+
+#card-index{
+	padding-top: 20px;
+	width: 400px;
+	margin: auto;
+	background-color: rgba(255,255,255,.3);
+	box-shadow: 0 0 4px 3px grey;
+	border-radius: 3%;
+}
+
+#card-index img{
+	width: 100px;
+}
+
+#card-index p{
+	font-weight: bold;
+	font-size: 17px;
+}
+
+
+.container-fluid .carousel-inner img{
+	height: 300px;
+	border: 1px solid black;
+}
+
+.container-fluid .carousel-inner{
+	padding-top: 20px;
+}
+
+.container-fluid .carousel-inner h4{
+	font-weight: bold;
+}
+
+.container-fluid h1{
+	text-align: center;
+	font-weight: 900;
+	padding-top: 40px;
+}
+
+.row .col-sm-12 .card{
+	box-shadow: 0 0 4px 3px grey;
+	margin: auto;
+}
+
+.about-us h1{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+.card-deck{
+	margin: auto;
+	width: 75%;
+}
+
+.card-deck img{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+}
+
+
+
+
+/*CSS File Provinsi*/
+.jumbotron {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background: url(../img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: white;
+}
+
+.jumbotron p{
+	font-weight: 800;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 900;
+}
+
+.jumbotron #container-provinsi {
+  max-width: 40rem;
+}
+
+.col-md-6 img{
+	height: 280px;
+}
+
+.col-md-6 .card-title{
+	font-weight: 700;
+}
