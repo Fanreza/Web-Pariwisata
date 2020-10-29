@@ -31,39 +31,19 @@
         <a class="nav-link" href="#kontak">Contact</a>
       </li>
       <div class="select-box">
-        <select data-selected="default" name="role" onchange=" location = this.value;">
-          <option value="default" disabled hidden class="default">Pilih Provinsi</option>
-          <option value="#">Jawa Barat</option>
-          <option value="#">Papua Barat</option>
-          <option value="provinsi.html">DKI Jakarta</option>
-          <option value="#">Jawa Timur</option>
-          <option value="#">Jawa Tengah</option>
-          <option value="#">Bali</option>
-          <option value="#">KEPULAUAN RIAU</option>
-          <option value="#">SULAWESI UTARA</option>
-          <option value="#">D.I YOGYAKARTA</option>
-          <option value="#">SUMATERA UTARA</option>
-          <option value="#">BANTEN</option>
-          <option value="#">NUSA TENGGARA BARAT</option>
-        </select>
-      </div>
-
-      <div class="select-box">
-        <select data-selected="default" name="role" onchange=" location = this.value;">
-          <option value="default" disabled hidden class="default">Pilih Kategori</option>
-          <option value="#">Jawa Barat</option>
-          <option value="#">Papua Barat</option>
-          <option value="provinsi.html">DKI Jakarta</option>
-          <option value="#">Jawa Timur</option>
-          <option value="#">Jawa Tengah</option>
-          <option value="#">Bali</option>
-          <option value="#">KEPULAUAN RIAU</option>
-          <option value="#">SULAWESI UTARA</option>
-          <option value="#">D.I YOGYAKARTA</option>
-          <option value="#">SUMATERA UTARA</option>
-          <option value="#">BANTEN</option>
-          <option value="#">NUSA TENGGARA BARAT</option>
-        </select>
+      	<form name="Postname" id="Idname" action="/provinsi">
+	        <select data-selected="default" name="role" onchange="Postname.submit()">
+	          <option value="default" disabled hidden class="default">Pilih Provinsi</option>
+	          <option value="#">Jawa Barat</option>
+	          <option value="#">Papua Barat</option>
+	          <option value="#" >DKI Jakarta</option>
+	          <option value="#">Jawa Timur</option>
+	          <option value="#">Jawa Tengah</option>
+	          <option value="#">Bali</option>
+	          <option value="#">Sulawesi Utara</option>
+	          <option value="#">D.I Yogyakarta</option>
+	        </select>
+        </form>
       </div>
     </ul>
   </div>
@@ -131,79 +111,84 @@
   <div class="row">
     <div class="col-sm-12">
       <div id="slide2" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-             <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-lg-4">
-                  <div class="card" style="width: 300px;">
-                    <img src="alat/img/s1.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h4 class="card-title">Pantai Kuta</h4>
-                      <p class="card-text">Pantai yang terletak di kecamatan Kuta,sebelah selatan Kota Denpasar,Bali</p>
-                      <button type="button" class="btn btn-warning">Selengkapnya</button>
-                    </div>       
-                  </div>             
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                  <div class="card" style="width: 300px;">
-                    <img src="alat/img/s2.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h4 class="card-title">Raja Ampat</h4>
-                      <p class="card-text">Gugusan pulau yang berlokasi di barat bagian Kepala Burung (Vogelkoop) Pulau Papua. </p>
-                      <button type="button" class="btn btn-warning">Selengkapnya</button>                 
-                    </div>                   
-                  </div>                  
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                  <div class="card" style="width: 300px;">
-                    <img src="alat/img/s3.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h4 class="card-title">Monumen Nasional</h4>
-                      <p class="card-text">Monumen Nasional yang terletak di Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta</p>
-                      <button type="button" class="btn btn-warning">Selengkapnya</button>                   
-                    </div>                  
-                  </div>                 
-                </div>               
-              </div>              
-             </div>          
-          </div>
+      	<form action="">	
+	        <div class="carousel-inner">
+	          <div class="carousel-item active">
+	             <div class="container">
+	              <div class="row">
+	              	<form action="">
+	                <div class="col-sm-12 col-lg-4">
+	                  <div class="card" style="width: 300px;">
+	                    <img src="alat/img/s1.jpg" class="card-img-top">
+	                    <div class="card-body">
+	                      <h4 class="card-title">Pantai Kuta</h4>
+	                      <p class="card-text">Pantai yang terletak di kecamatan Kuta,sebelah selatan Kota Denpasar,Bali</p>
+	                      <button type="submit" class="btn btn-warning">Selengkapnya</button>
+	                    </div>       
+	                  </div>             
+	                </div>
+	                <div class="col-sm-12 col-lg-4">
+	                  <div class="card" style="width: 300px;">
+	                    <img src="alat/img/papua-barat/teluk-cenderawasih/teluk-cenderawasih-bg.jpg" class="card-img-top">
+	                    <div class="card-body">
+	                      <h4 class="card-title">Teluk Cenderawasih</h4>
+	                      <p class="card-text">Taman Nasional Teluk Cenderawasih merupakan taman nasional perairan laut terluas di Indonesia</p>
+	                      <button type="submit" class="btn btn-warning">Selengkapnya</button>                 
+	                    </div>                   
+	                  </div>                  
+	                </div>
+	                <div class="col-sm-12 col-lg-4">
+	                  <div class="card" style="width: 300px;">
+	                    <img src="alat/img/dki-jakarta/taman-ancol/taman-ancol-bg.jpg" class="card-img-top">
+	                    <div class="card-body">
+	                      <h4 class="card-title">Taman Ancol</h4>
+	                      <p class="card-text">Kawasan wisata terpadu di DKI Jakarta yang menjadi iconik wisata Jakarta</p>
+	                      <button type="submit" class="btn btn-warning">Selengkapnya</button>                   
+	                    </div>                  
+	                  </div>                 
+	                </div>               
+	              </div>              
+	             </div>          
+	          </div>
+	    </form>
           <div class="carousel-item">
-             <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-lg-4">
-                  <div class="card" style="width: 300px;margin: auto;">
-                    <img src="alat/img/s4.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h4 class="card-title">Hutan Pinus</h4>
-                      <p class="card-text">Hutan Pinus yang terletak di Jl. Ke Karang Tengah, Karang Tengah, Kec. Babakan Madang, Bogor</p>
-                      <button type="button" class="btn btn-warning">Selengkapnya</button>                   
-                    </div>
-                  </div>                 
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                  <div class="card" style="width: 300px;">
-                    <img src="alat/img/s5.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h4 class="card-title">Candi Borobudur</h4>
-                      <p class="card-text">Candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia</p>
-                      <button type="button" class="btn btn-warning">Selengkapnya</button>                   
-                    </div>                    
-                  </div>                  
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                  <div class="card" style="width: 300px;">
-                    <img src="alat/img/s6.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <h4 class="card-title">Gunung Bromo</h4>
-                      <p class="card-text">sebuah gunung berapi aktif di Jawa Timur, memiliki ketinggian 2.329 meter di atas permukaan laut</p>
-                      <button type="button" class="btn btn-warning">Selengkapnya</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             </div>
-          </div>
+          	<form action="">
+	             <div class="container">
+	              <div class="row">
+	                <div class="col-sm-12 col-lg-4">
+	                  <div class="card" style="width: 300px;margin: auto;">
+	                    <img src="alat/img/jawa-barat/tangkuban-perahu/tangkuban-perahu-bg.jpg" class="card-img-top">
+	                    <div class="card-body">
+	                      <h4 class="card-title">Tangkuban Perahu</h4>
+	                      <p class="card-text">Gunung Tangkuban Parahu adalah salah satu gunung yang terletak di Provinsi Jawa Barat, Indonesia.</p>
+	                      <button type="submit" class="btn btn-warning">Selengkapnya</button>                   
+	                    </div>
+	                  </div>                 
+	                </div>
+	                <div class="col-sm-12 col-lg-4">
+	                  <div class="card" style="width: 300px;">
+	                    <img src="alat/img/s5.jpg" class="card-img-top">
+	                    <div class="card-body">
+	                      <h4 class="card-title">Candi Borobudur</h4>
+	                      <p class="card-text">Candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia</p>
+	                      <button type="submit" class="btn btn-warning">Selengkapnya</button>                   
+	                    </div>                    
+	                  </div>                  
+	                </div>
+	                <div class="col-sm-12 col-lg-4">
+	                  <div class="card" style="width: 300px;">
+	                    <img src="alat/img/jawa-timur/bromo/bromo-bg.jpg" class="card-img-top">
+	                    <div class="card-body">
+	                      <h4 class="card-title">Gunung Bromo</h4>
+	                      <p class="card-text">sebuah gunung berapi aktif di Jawa Timur, memiliki ketinggian 2.329 meter di atas permukaan laut</p>
+	                      <button type="submit" class="btn btn-warning">Selengkapnya</button>
+	                    </div>
+	                  </div>
+	                </div>
+	              </div>
+	             </div>
+	          </div>
+          </form>
         </div>
         <a href="#slide2" class="carousel-control-prev" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
@@ -222,12 +207,12 @@
 
 <div class="card-deck">
     <div class="card">
-    <img src="alat/img/p1.png" class="card-img-top" alt="...">
+    <img src="alat/img/p1.png" class="card-img-top" alt="..." style="border-radius: 50%;">
     <div class="card-body">
       <h5 class="card-title text-center">Muhammad Ihsan Abdurrahman</h5>
       <div class="card-body">
 	      <p class="card-text">Bersekolah di SMKN 1 CIBINONG</p>
-	      <p class="card-text">Bertempat tinggal di ....</p>
+	      <p class="card-text">jurusan Teknik Komputer Jaringan</p>
       </div>
     </div>
     <div class="card-footer">
@@ -237,13 +222,13 @@
     </div>
   </div>
   <div class="card">
-    <img src="alat/img/p2.png" class="card-img-top" alt="...">
+    <img src="alat/img/p2.png" class="card-img-top" alt="..." style="border-radius: 50%;">
     <div class="card-body">
       <h5 class="card-title text-center">Muhamad Jamil Fanreza</h5>
       <div class="card-body">
       	<div class="card-body">
 	      <p class="card-text">Bersekolah di SMKN 1 CIBINONG</p>
-	      <p class="card-text">Bertempat tinggal di ....</p>
+	      <p class="card-text">jurusan Sistem Informasi Jaringan Aplikasi</p>
 	    </div>
       </div>
     </div>
@@ -254,20 +239,20 @@
     </div>
   </div>
   <div class="card">
-    <img src="alat/img/p3.png" class="card-img-top" alt="...">
+    <img src="alat/img/p3.png" class="card-img-top" alt="..." style="border-radius: 50%;">
     <div class="card-body">
       <h5 class="card-title text-center">Ataullah Fairuz Ibrahim</h5>
       <div class="card-body">
       	<div class="card-body">
 	      <p class="card-text">Bersekolah di SMKN 1 CIBINONG</p>
-	      <p class="card-text">Bertempat tinggal di ....</p>
+	      <p class="card-text">jurusan Multimedia</p>
 	    </div>
       </div>
     </div>
     <div class="card-footer">
       <a href="https://github.com/ATaullFairZ"><img src="alat/img/github.png"></a>
       <a href="https://www.instagram.com/ataullah.fairuz/?hl=id"><img src="alat/img/instagram.png"></a>
-      <a href=""><img src="alat/img/telegram.png"></a>
+      <a href="https://t.me/ATaullFairZ17"><img src="alat/img/telegram.png"></a>
     </div>
   </div>
 </div>
@@ -283,13 +268,19 @@
       <div class="col-md-3 icon-sosmed">
         <h4 class="title-footer">Contact Nevtik</h4>
         <a href="https://www.instagram.com/nevtikacademy/?hl=id"><img src="alat/img/instagram.png"></a>
-        <a href="https://github.com/NEVTIK-org"><img src="alat/img/github.png"></a>
-        <a href="https://nevtik.org/"><img src="alat/img/web.png"></a>
+        <a href="https://github.com/NEVTIK-org"><img src="alat/img/github.png" style="margin-left: 10px;"></a>
+        <a href="https://nevtik.org/"><img src="alat/img/web.png" style="margin-left: 10px"></a>
       </div>
       <div class="col-md-4">
-        <p>EMAIL: admin@nevtik.org</p>
-        <p>NO TELEPON: +6285697250577</p>
-        <p>LOKASI: Jl.Raya Karadenan, Kab. Bogor, Jawa Barat</p>
+        <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+</svg> admin@nevtik.org</p>
+        <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+</svg> +6285697250577</p>
+        <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-map-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.502.502 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5V.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.498.498 0 0 0-.196 0L5 14.09zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1-.5-.1z"/>
+</svg> Jl.Raya Karadenan, Kab. Bogor, Jawa Barat</p>
       </div>
     </div>
   </div>
