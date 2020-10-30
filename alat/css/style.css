@@ -83,13 +83,13 @@ body{
 	margin-top: 10px;
 }
 
-.col-md-4 p{
+#footer-paragraf p{
 	font-size: 16px;
 	font-weight: 900;
 	display: inline-block;
 }
 
-.col-md-4 svg{
+#footer-paragraf svg{
 	font-size: 30px;
 }
 
@@ -265,13 +265,38 @@ body{
 }
 
 
+/*CSS file review*/
+#jumbo-review{
+	background: url(../img/bg-review.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.jumbo-text{
+	max-width: 40rem;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 4%;
+	padding-left: 20px;
+}
+
+.jumbotron-review .jumbotron a{
+	margin-top: 30px;
+}
+
+#review{
+	margin-top: 50px;
+}
+
+#review .card img{
+	height: 200px;
+}
+
 /*CSS File Wisata*/
 .media img{
 	width: 70px;
 	height: 50px;
 }
 .media-body p{
-	
 	border: solid 1px grey;
 	border-radius: 10px;
 	padding: 10px;
@@ -353,5 +378,8 @@ body{
 	}
 	.col-md-3{
 		text-align: center;
+	}
+	#jumbo-review{
+		background-position-x: -170px; 
 	}
 }
