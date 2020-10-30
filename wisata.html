@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="alat/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="alat/css/style.css">
     <link rel="icon" href="alat/img/icon.png">
-    <title>Nev Travel</title>
+    <title>Wisata</title>
   </head>
   <body>
 
@@ -80,6 +80,7 @@
         <hr>
         </div>
         <div class="col-md-4">
+          <form action="">
           <div class="form-ulasan">
             <h4 align="center">Ulasan Pengunjung</h4>
             <hr>
@@ -89,7 +90,7 @@
                 <div class="media-body">
                   <a> Bimo Febrian </a>
                   <a href="Bimofebrian@gmail.com">Bimofebrian@gmail.com</a>
-                 <p> Mantap wisatanya Bagus Banget </p>
+                 <p> Mantap wisatanya Bagus Banget gk nyesel deh</p>
                 </div>
               </li>
               <li class="media">
@@ -97,7 +98,7 @@
                 <div class="media-body">
                   <a> Deny ilyas </a>
                   <a href="gmail.com">Deny@gmail.com</a>
-                 <p> Mantap wisatanya Bagus Banget </p>
+                 <p> Guide nya oke oke,wisata nya juga lumayan,rekomended banget sih </p>
                 </div>
               </li>
               <li class="media">
@@ -105,16 +106,19 @@
                 <div class="media-body">
                   <a> Hzkia Rizki</a>
                   <a href="Hizkia45gmail.com">Hizkia@gmail.com</a>
-                  <p> Mantap wisatanya Bagus Banget </p>
+                  <p> Pertama kalinya liburan ke tempat seperti ini,dan jujur happy bangettt </p>
                 </div>
               </li>
             </ul>
+            <button type="submit" class="btn btn-primary" style="margin-left: 10px; margin-bottom: 10px;">Selengkapnya</button>
+          </form>
           </div>
+
           <br>
           
           <div class="form-komentar">
             <div class="container">
-              <form action="" method="POST">
+              <form onsubmit="openModal()" id="myForm" action="" method="POST">
                 <br>
                 <h2 align="center">Ulasan</h2>
                   <div>Nama</div>
@@ -193,6 +197,22 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Submit Berhasil</h4>
+      </div>
+      <div class="modal-body">
+        <p>Terima kasih ulasan anda sangat membantu kami</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
  
 
 <div id="kontak" class="footer">
@@ -208,7 +228,7 @@
         <a href="https://github.com/NEVTIK-org"><img src="alat/img/github.png" style="margin-left: 10px;"></a>
         <a href="https://nevtik.org/"><img src="alat/img/web.png" style="margin-left: 10px"></a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" id="footer-paragraf">
         <p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
 </svg> admin@nevtik.org</p>
@@ -238,15 +258,12 @@
        $(window).scroll(function(){
        $('nav').toggleClass('scroll', $(this).scrollTop() > 10);
        });
-       
 
-       // $("select").click(function() {
-       //  var open = $(this).data("buka");
-       //  if(open) {
-       //    window.location.href = $(this).val()
-       //  }
-       // $(this).data("buka", !open);
-       // });
+       $('#myForm').on('submit', function(e){
+        $('#myModal').modal('show');
+        e.preventDefault();
+       });
+
         document.querySelectorAll('[data-selected]').forEach(e => {
          e.value = e.dataset.selected
       });
