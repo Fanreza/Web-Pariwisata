@@ -230,10 +230,7 @@ body{
 .jumbotron {
   padding-top: 10rem;
   padding-bottom: 3rem;
-  margin-bottom: 0;
-  background: url(../img/jumbotron.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-bottom: 0;	
   height: 600px;
   color: white;
 }
